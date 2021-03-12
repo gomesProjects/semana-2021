@@ -753,6 +753,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #f6783a;
 	margin-right: 10px;
 }
+
+#about-button {
+  justify-content: center;
+}
+
+#about-button a {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  border: 2px solid var(--primary);
+  text-align: center;
+  padding: 10px 25px 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  animation-delay: 0.5s;
+  color: #fff;
+}
+
+#about-button .col-lg-3 {
+  text-align: center;
+}
+#about-button a:hover {
+  background-color: var(--primary);
+}
+
+
+
 /*--------------------------------------------------------------
 # Content Section
 --------------------------------------------------------------*/
@@ -808,6 +834,56 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #content .content-card .details a:hover {
   color: var(--primary);
+}
+
+/*--------------------------------------------------------------
+# Verpons Section
+--------------------------------------------------------------*/
+#verpons {
+  padding: 60px 0 60px 0;
+  background-color: var(--primary);
+  height: 320px;
+}
+
+.card-verpons h3{
+  text-align: center;
+  position: relative;
+  top: 100%;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.card-verpons p{
+  text-align: center;
+  position: relative;
+  top: 100%;
+}
+
+#neoverpons {
+  height: 100px;
+  background-image: url('../img/icons/neoverpons.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#intercambio {
+  height: 100px;
+  background-image: url('../img/icons/intercambio.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#amizades {
+  height: 100px;
+  background-image: url('../img/icons/amizade.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 /*--------------------------------------------------------------
@@ -904,6 +980,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule #collapsed-schedule p {
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -989,33 +1066,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Venue Section
+# Participe Section
 --------------------------------------------------------------*/
-#venue {
-  padding: 60px 0;
-}
-
-#venue .container-fluid {
-  margin-bottom: 3px;
-}
-
-#venue .venue-map iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-}
-
-#venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+#participe {
+  padding: 60px;
+  background: url(../img/subscribe-bg.jpg) center center no-repeat;
   background-size: cover;
+  overflow: hidden;
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  height: 200px;
 }
 
-#venue .venue-info:before {
+#participe:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(6, 12, 34, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1023,97 +1087,78 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#venue .venue-info h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-}
-
-@media (max-width: 574px) {
-  #venue .venue-info h3 {
-    font-size: 24px;
+@media (min-width: 1024px) {
+  #participe {
+    background-attachment: fixed;
   }
 }
 
-#venue .venue-info p {
+#participe #participe-text h1, p {
   color: #fff;
-  margin-bottom: 0;
+  position: relative;
+  top: -10px;
 }
 
-#venue .venue-gallery-container {
-  padding-right: 12px;
+#participe #participe-button a {
+  position: relative;
+  float:right;
+  top: 20%;
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--primary);
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 25px;
+  text-align: center;
 }
 
-#venue .venue-gallery {
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+#participe #participe-button a:hover {
+  background: var(--tertiary);
 }
 
-#venue .venue-gallery img {
-  transition: all ease-in-out 0.4s;
-}
-
-#venue .venue-gallery:hover img {
-  transform: scale(1.1);
+@media (max-width: 460px) {
+  #participe button {
+    margin-top: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
-# Hotels Section
+# Sponsors Section
 --------------------------------------------------------------*/
-#hotels {
+#tertulia {
   padding: 60px 0;
 }
 
-#hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
+#tertulia .section-header p {
+  color: #000;
+}
+
+#tertulia .supporters-wrap {
+  border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
-#hotels .hotel:hover .hotel-img img {
-  transform: scale(1.1);
-}
-
-#hotels .hotel-img {
+#tertulia .tertulia-card {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  height: 160px;
 }
 
-#hotels .hotel-img img {
-  transition: 0.3s ease-in-out;
+#tertulia .tertulia-card:hover img {
+  transform: scale(1.2);
 }
 
-#hotels h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#hotels a {
-  color: #152b79;
-}
-
-#hotels a:hover {
-  color: #f82249;
-}
-
-#hotels .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#hotels .stars i {
-  color: #ffc31d;
-}
-
-#hotels p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #060c22;
-  font-style: italic;
-  font-size: 15px;
+#tertulia img {
+  transition: all 0.4s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -1158,39 +1203,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 4px;
   background: #fff;
   z-index: 1;
-}
-
-/*--------------------------------------------------------------
-# Sponsors Section
---------------------------------------------------------------*/
-#supporters {
-  padding: 60px 0;
-}
-
-#supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
-  margin-bottom: 30px;
-}
-
-#supporters .supporter-logo {
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
-  height: 160px;
-}
-
-#supporters .supporter-logo:hover img {
-  transform: scale(1.2);
-}
-
-#supporters img {
-  transition: all 0.4s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -1250,76 +1262,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
-}
-
-/*--------------------------------------------------------------
-# Subscribe Section
---------------------------------------------------------------*/
-#subscribe {
-  padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-#subscribe:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-@media (min-width: 1024px) {
-  #subscribe {
-    background-attachment: fixed;
-  }
-}
-
-#subscribe .section-header h2, #subscribe p {
-  color: #fff;
-}
-
-#subscribe input {
-  background: #fff;
-  color: #060c22;
-  border: 0;
-  outline: none;
-  margin: 0;
-  padding: 9px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-}
-
-@media (min-width: 767px) {
-  #subscribe input {
-    min-width: 400px;
-  }
-}
-
-#subscribe button {
-  border: 0;
-  padding: 9px 25px;
-  cursor: pointer;
-  background: #f82249;
-  color: #fff;
-  transition: all 0.3s ease;
-  outline: none;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-#subscribe button:hover {
-  background: #e0072f;
-}
-
-@media (max-width: 460px) {
-  #subscribe button {
-    margin-top: 10px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1557,14 +1499,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
-  padding: 0 0 25px 0;
+  background: var(--tertiary);
+  padding: 0 0 15px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: var(--secondary);
   padding: 60px 0 30px 0;
 }
 
@@ -1589,6 +1531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-info p {
   font-size: 14px;
+  padding-top: 15px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Lato", sans-serif;
@@ -1611,7 +1554,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .descricao-links a:hover {
-  background: #f82249;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -1622,7 +1565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid var(--primary);
 }
 
 #footer .footer-top .footer-links {
@@ -1637,7 +1580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: var(--primary);
   font-size: 18px;
 }
 
@@ -1655,7 +1598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: var(--primary);
 }
 
 #footer .footer-top .footer-contact {
@@ -1693,11 +1636,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  height: 20px;
 }
 
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #ddd;
+#footer .copyright h5{
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 0px;
+  padding-top: 5px;
 }
