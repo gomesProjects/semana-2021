@@ -1,4 +1,4 @@
-var conuntDate = new Date('Jul 8, 2021 12:30:00').getTime();
+var conuntDate = new Date('Mar 31, 2021 23:59:59').getTime();
 
 function countDown(){
 

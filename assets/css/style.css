@@ -76,13 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: var(--tertiary);
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: var(--tertiary);
   color: #fff;
 }
 
@@ -592,7 +592,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0;
 }
 
-#intro .about-btn {
+#intro .about-btn, .inscrever-btn {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -607,11 +607,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid var(--primary);
+  cursor: pointer;
 }
 
 #intro .about-btn:hover {
   background: var(--primary);
   color: #fff;
+}
+
+#intro .inscrever-btn {
+  background: var(--primary);
+}
+
+#intro .inscrever-btn:hover {
+  background: #fff;
+  color: var(--primary);
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -636,27 +646,69 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+/*-------------Modal Sobre--------------------*/
+
+#intro .sobre-container {
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#intro .sobre-coluna {
+  width: 45vw;
+  height: 90vh;
+  background-color: #f6f7fd;
+  border-radius: 25px;
+  text-align: justify;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+#intro .sobre-coluna h3{
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+#intro .sobre-paragraph {
+  color: var(--tertiary);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#intro #sobre-paragraph-3 {
+  margin-bottom: 0;
+}
+
+#intro .sobre-coluna a {
+  cursor: pointer;
+  position: fixed;
+  top: 8px;
+  right: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+
 /*--------------------------------------------------------------
-# About Section
+# Desconto Section
 --------------------------------------------------------------*/
-#about {
-  background: url("../img/about-bg.jpg");
-  background-size: cover;
+#desconto {
   overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
 }
 
-@media (min-width: 1024px) {
-  #about {
-    background-attachment: fixed;
-  }
-}
-
-#about:before {
+#desconto:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: var(--primary);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -664,33 +716,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#about h2 {
+#desconto h2 {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
+  margin-bottom: 15px;
+  color: var(--tertiary);
 }
 
-#about h3 {
+#desconto h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
-#about p {
-  font-size: 14px;
+#desconto p {
+  font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
 }
 
-#about {
+#desconto {
 	background: #020031;
 	padding: 40px 0;
 }
 
-#about .big-icon {
+#desconto .big-icon {
 	display: block;
 	float: left;
 	width: 71px;
@@ -702,17 +754,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 	margin-right: 15px;
 }
 
-#about .big-icon i {
+#desconto .big-icon i {
 	font-size: 30px;
 	color: #f6783a;
 }
 
-#about .counter {
+#desconto .counter {
 	padding-left: 40px;
   padding-top: 20px;
 }
 
-#about .counter .counter-item {
+#desconto .counter .counter-item {
 	min-width: 100px;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -722,11 +774,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 	display: inline-block;
 }
 
-#about .counter .counter-item:last-child {
+#desconto .counter .counter-item:last-child {
 	border-right: none;
 }
 
-#about .counter .counter-item h4 {
+#desconto .counter .counter-item h4 {
 	font-size: 36px;
 	color: #fff;
 	margin-bottom: 4px;
@@ -754,34 +806,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 	margin-right: 10px;
 }
 
-#about-button {
-  justify-content: center;
-}
-
-#about-button a {
-  font-size: 18px;
-  font-family: "Lato", sans-serif;
-  border: 2px solid var(--primary);
-  text-align: center;
-  padding: 10px 25px 10px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  animation-delay: 0.5s;
-  color: #fff;
-}
-
-#about-button .col-lg-3 {
-  text-align: center;
-}
-#about-button a:hover {
-  background-color: var(--primary);
-}
-
-
-
 /*--------------------------------------------------------------
 # Content Section
---------------------------------------------------------------*/
+--------------------------------------------------------------
 
 #content {
   padding: 60px 0 30px 0;
@@ -798,7 +825,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #content .content-card .details {
-  /*background: var(--tertiary);*/
+  /*background: var(--tertiary);
   position: absolute;
   left: 0;
   height: 98px;
@@ -834,7 +861,82 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #content .content-card .details a:hover {
   color: var(--primary);
+}*/
+
+/*--------------------------------------------------------------
+Content Section
+--------------------------------------------------------------*/
+
+#content {
+  padding: 60px 50px 30px 50px;
 }
+
+.content-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.content-card {
+  width: 403px;
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#row-1 .content-card:nth-child(1),
+#row-1 .content-card:nth-child(2) {
+  border-right: 1px solid rgba(68, 68, 68, 0.5);
+  border-bottom: 1px solid rgba(68, 68, 68, 0.5);
+}
+
+#row-1 .content-card:nth-child(3) {
+  border-bottom: 1px solid rgba(68, 68, 68, 0.5);
+}
+
+#row-2 .content-card:nth-child(1),
+#row-2 .content-card:nth-child(2) {
+  border-right: 1px solid rgba(68, 68, 68,0.5);
+}
+
+#congresso {
+  width: 130px;
+  height: 130px;
+}
+
+#roda-vida,
+#video-debate,
+#tempos,
+#conferencia,
+#tertulia-icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 40px;
+}
+
+.content-card p {
+  color: var(--tertiary);
+  font-weight: 500;
+}
+
+.content-card h5 {
+  color: var(--tertiary);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.content-card a {
+  cursor: pointer;
+}
+
+.content-card h5:hover {
+  color: var(--primary);
+}
+
+
 
 /*--------------------------------------------------------------
 # Verpons Section
@@ -1070,7 +1172,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #participe {
   padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background: url(../img/participe-bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1142,10 +1244,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #tertulia .tertulia-card {
-  padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
@@ -1153,12 +1254,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 160px;
 }
 
-#tertulia .tertulia-card:hover img {
-  transform: scale(1.2);
+.tertulia-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: var(--primary);
 }
 
-#tertulia img {
-  transition: all 0.4s ease-in-out;
+.tertulia-card p{
+  color: var(--tertiary);
+  margin-left: 15px;
+  margin-bottom: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -1209,7 +1317,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 # F.A.Q Section
 --------------------------------------------------------------*/
 #faq {
-  padding: 60px 0;
+  padding: 40px 0;
+}
+
+#faq .row {
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 #faq #faq-list {
@@ -1218,7 +1331,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+  padding: 0px 10px 0px 10px;
 }
 
 #faq #faq-list a {
@@ -1230,6 +1344,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   font-weight: 700;
   padding-right: 20px;
+  color: var(--tertiary);
 }
 
 #faq #faq-list i {
@@ -1240,7 +1355,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list p {
+  margin-top: 10px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -1252,16 +1369,72 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-#faq #faq-list a.collapse {
-  color: #f82249;
-}
-
-#faq #faq-list a.collapsed {
-  color: #000;
-}
-
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
+}
+
+/*--------------------------------------------------------------
+Curso Pré-congresso
+----------------------------------------------------------------*/
+#pre-congresso {
+  padding: 60px 0px;
+}
+
+#pre-congresso p{
+  color: var(--tertiary);
+  position: relative;
+  text-align: center;
+  top: -39px;
+}
+
+#pre-congresso #precongresso-img {
+  width: 600px;
+  margin-left: 25px;
+}
+
+.pre-container {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: space-evenly;
+
+}
+
+.pre-coluna {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#pre-congresso #pre-paragraph {
+  text-align: left;
+}
+
+.pre-coluna img {
+  width: 600px;
+}
+
+.pre-coluna h3 {
+  font-weight: 600;
+}
+
+.pre-coluna li {
+  list-style: none;
+  color: var(--tertiary);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.pre-coluna ul {
+  padding: 0;
+}
+
+.pre-coluna ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1269,6 +1442,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #buy-tickets {
   padding: 60px 0;
+  background: url(../img/inscricoes.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#buy-tickets .section-header h2,
+#buy-tickets .section-header p{
+  color: #fff;
+}
+
+#buy-tickets:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  #buy-tickets {
+    background-attachment: fixed;
+  }
 }
 
 #buy-tickets .card {
@@ -1282,60 +1480,73 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
 }
 
-#buy-tickets .card hr {
-  margin: 25px 0;
+#buy-tickets .card-content {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
+#buy-tickets .card-content .li-content {
+  margin-left: 40px;
+  display: flex;
+  align-items: baseline;
 }
 
-#buy-tickets .card .card-price {
-  font-size: 48px;
+#buy-tickets .card-content h5 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+#buy-tickets .card-content .title-1 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#buy-tickets .card-content p {
+  color: var(--tertiary);
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#buy-tickets .card-content .card-price {
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
   margin: 0;
 }
 
-#buy-tickets .card ul li {
-  margin-bottom: 20px;
+#buy-tickets .card-content #check {
+  color: var(--primary);
+  padding-right: 5px;
 }
 
 #buy-tickets .card .text-muted {
   opacity: 0.7;
 }
 
-#buy-tickets .card .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #f82249;
-  border: 0;
+#buy-tickets .buy-button {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+#buy-tickets .buy-button a {
   color: #fff;
+  font-size: 18px;
+  background-color: var(--primary);
+  padding: 14px 20px 10px 20px;
+  border-radius: 25PX;
+  transition: all 0.2s ease-in;
 }
 
-#buy-tickets .card .btn:hover {
-  background-color: #e0072f;
-}
-
-#buy-tickets #buy-ticket-modal input, #buy-tickets #buy-ticket-modal select {
-  border-radius: 0;
-}
-
-#buy-tickets #buy-ticket-modal .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #f82249;
-  border: 0;
-  color: #fff;
-}
-
-#buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+#buy-tickets .buy-button a:hover {
+  background-color: var(--tertiary);
 }
 
 /*--------------------------------------------------------------
