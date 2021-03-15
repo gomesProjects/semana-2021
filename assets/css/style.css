@@ -648,6 +648,38 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------------Modal Sobre--------------------*/
 
+.my-modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/intro-bg.jpg) top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-in .5s;
+  z-index:1050;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.my-modal-bg:before {
+  content: "";
+  background: linear-gradient(45deg, rgba(46,106,150,0.8), rgba(0,35,71,0.8));
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 #intro .sobre-container {
   width: 100vw;
   height: inherit;
@@ -655,15 +687,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 #intro .sobre-coluna {
   width: 45vw;
   height: 90vh;
-  background-color: #f6f7fd;
   border-radius: 25px;
   text-align: justify;
-  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 #intro .sobre-coluna h3{
@@ -675,7 +706,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .sobre-paragraph {
-  color: var(--tertiary);
+  color: #fff;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 18px;
@@ -694,7 +725,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-weight: 700;
 }
-
 
 /*--------------------------------------------------------------
 # Desconto Section
@@ -732,7 +762,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #desconto p {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -805,63 +835,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 	color: #f6783a;
 	margin-right: 10px;
 }
-
-/*--------------------------------------------------------------
-# Content Section
---------------------------------------------------------------
-
-#content {
-  padding: 60px 0 30px 0;
-}
-
-.border-box {
-  border: 1px solid var(--primary);
-}
-
-#content .content-card {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-#content .content-card .details {
-  /*background: var(--tertiary);
-  position: absolute;
-  left: 0;
-  height: 98px;
-  bottom: 10px;
-  right: 0;
-  text-align: center;
-  padding-top: 8px;
-  border-radius: 20px;
-}
-
-#content .content-card .details h3 {
-  color: var(--secondary);
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#content .content-card .details p {
-  color: var(--secondary);
-  font-size: 15px;
-  margin-bottom: 10px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-#content .content-card .details .descricao {
-  height: 30px;
-}
-
-#content .content-card .details a {
-  color: var(--secondary);
-}
-
-#content .content-card .details a:hover {
-  color: var(--primary);
-}*/
 
 /*--------------------------------------------------------------
 Content Section
@@ -1675,7 +1648,7 @@ Curso Pré-congresso
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #f82249;
+  background: var(--primary);
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1685,7 +1658,7 @@ Curso Pré-congresso
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #e0072f;
+  background: var(--tertiary);
 }
 
 @-webkit-keyframes animate-loading {

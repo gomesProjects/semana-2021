@@ -190,6 +190,14 @@
     }
   });
 
+  $(".about-btn").click(function() {
+    $(".my-modal-bg").toggleClass("bg-active");
+  })
+
+  $(".close-about").click(function() {
+    $(".my-modal-bg").toggleClass("bg-active");
+  })
+
   // Buy tickets select the ticket type on click
   $('#buy-ticket-modal').on('show.bs.modal', function(event) {
     var button = $(event.relatedTarget);

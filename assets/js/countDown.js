@@ -19,10 +19,9 @@ function countDown(){
         document.getElementById('hours').innerText = h;
         document.getElementById('minutes').innerText = m;
         document.getElementById('seconds').innerText = s;
-
-        console.log(`${d}, ${h}:${m}:${s}`)
 }
 
 setInterval(function(){
     countDown();
 },1000);
+
