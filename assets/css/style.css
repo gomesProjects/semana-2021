@@ -1359,13 +1359,6 @@ Curso Pré-congresso
   padding: 60px 0px;
 }
 
-#curso-congresso p{
-  color: var(--tertiary);
-  position: relative;
-  text-align: center;
-  top: -39px;
-}
-
 .curso-container {
   display: flex;
   flex-flow: row wrap;
@@ -1382,6 +1375,10 @@ Curso Pré-congresso
 
 #curso-congresso #curso-paragraph {
   text-align: left;
+  color: var(--tertiary);
+  position: relative;
+  text-align: center;
+  top: -39px;
 }
 
 .curso-coluna img {
@@ -1408,6 +1405,53 @@ Curso Pré-congresso
   width: 15px;
   height: 15px;
   margin-right: 10px;
+}
+
+@media (max-width:900px){
+  .curso-container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .curso-coluna {
+    width: 400px;
+    height: 250px;
+    align-items: center;
+  }
+  .curso-coluna:nth-child(2){
+    height: 500px;
+  }
+  .curso-coluna img {
+    width:350px;
+  }
+  .curso-coluna #curso-paragraph {
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+}
+
+@media (max-width:400px){
+  .curso-container {
+    flex-flow: column;
+  }
+  .curso-coluna {
+    width: 400px;
+    height: 250px;
+    align-items: center;
+  }
+  .curso-coluna:nth-child(2){
+    height: 500px;
+  }
+  .curso-coluna img {
+    width:350px;
+  }
+  .curso-coluna #curso-paragraph {
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px
+  }
 }
 
 /*--------------------------------------------------------------
