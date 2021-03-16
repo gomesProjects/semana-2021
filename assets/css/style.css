@@ -851,10 +851,10 @@ Content Section
 }
 
 .content-card {
-  width: 403px;
+  width: 33%;
   height: 300px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -909,57 +909,63 @@ Content Section
   color: var(--primary);
 }
 
+@media (max-width: 972px) {
+  .content-card {
+    height: 200px;
+  }
+  
+  #congresso {
+    width: 90px;
+    height: 90px;
+  }
+  
+  #roda-vida,
+  #video-debate,
+  #tempos,
+  #conferencia,
+  #tertulia-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
 
-
+  .content-card h5 {
+    font-size: 15px;
+  }
+  .content-card p {
+    font-size: 12px;
+  }
+}
 /*--------------------------------------------------------------
 # Verpons Section
 --------------------------------------------------------------*/
 #verpons {
-  padding: 60px 0 60px 0;
+  padding: 60px 0 30px 0;
   background-color: var(--primary);
-  height: 320px;
+}
+
+.card-verpons #coluna-verpons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-verpons img {
+  height: 100px;
 }
 
 .card-verpons h3{
   text-align: center;
-  position: relative;
-  top: 100%;
   padding-top: 15px;
   color: #fff;
 }
 
 .card-verpons p{
   text-align: center;
-  position: relative;
-  top: 100%;
+  
 }
 
-#neoverpons {
-  height: 100px;
-  background-image: url('../img/icons/neoverpons.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-
-#intercambio {
-  height: 100px;
-  background-image: url('../img/icons/intercambio.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-
-#amizades {
-  height: 100px;
-  background-image: url('../img/icons/amizade.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
 
 /*--------------------------------------------------------------
 # Schedule Section
@@ -1349,30 +1355,24 @@ Content Section
 /*--------------------------------------------------------------
 Curso Pré-congresso
 ----------------------------------------------------------------*/
-#pre-congresso {
+#curso-congresso {
   padding: 60px 0px;
 }
 
-#pre-congresso p{
+#curso-congresso p{
   color: var(--tertiary);
   position: relative;
   text-align: center;
   top: -39px;
 }
 
-#pre-congresso #precongresso-img {
-  width: 600px;
-  margin-left: 25px;
-}
-
-.pre-container {
+.curso-container {
   display: flex;
-  flex-direction: column wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-
 }
 
-.pre-coluna {
+.curso-coluna {
   width: 600px;
   height: 400px;
   display: flex;
@@ -1380,19 +1380,19 @@ Curso Pré-congresso
   justify-content: flex-end;
 }
 
-#pre-congresso #pre-paragraph {
+#curso-congresso #curso-paragraph {
   text-align: left;
 }
 
-.pre-coluna img {
+.curso-coluna img {
   width: 600px;
 }
 
-.pre-coluna h3 {
+.curso-coluna h3 {
   font-weight: 600;
 }
 
-.pre-coluna li {
+.curso-coluna li {
   list-style: none;
   color: var(--tertiary);
   display: flex;
@@ -1400,11 +1400,11 @@ Curso Pré-congresso
   align-items: center;
 }
 
-.pre-coluna ul {
+.curso-coluna ul {
   padding: 0;
 }
 
-.pre-coluna ul li img {
+.curso-coluna ul li img {
   width: 15px;
   height: 15px;
   margin-right: 10px;
@@ -1448,6 +1448,7 @@ Curso Pré-congresso
   transition: all  0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
+
 
 #buy-tickets .card:hover {
   box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
