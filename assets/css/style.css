@@ -647,13 +647,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media(max-width:400px) {
+  #intro .row {
+    flex-flow: column;
+  }
+}
+
 /*-------------Modal Sobre--------------------*/
 
 .my-modal-bg{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
@@ -679,6 +685,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
+  width: 100vw;
 }
 
 #intro .sobre-container {
@@ -727,7 +734,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
-@media(max-width:370px){
+@media(max-width:500px){
   .my-modal-bg {
     overflow:scroll;
   }
@@ -855,6 +862,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 	margin-right: 10px;
 }
 
+@media(max-width:500px){
+  #desconto .counter {
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  #desconto .counter .counter-item {
+    font-size: 16px;
+    min-width: 70px;
+  }
+  #desconto .counter .counter-item h4 {
+    font-size: 25px;
+  }
+}
+
 /*--------------------------------------------------------------
 Content Section
 --------------------------------------------------------------*/
@@ -928,9 +950,24 @@ Content Section
   color: var(--primary);
 }
 
-@media (max-width: 972px) {
+@media (max-width: 500px) {
+  #content {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .content-container{
+    flex-flow: column;
+  }
+  
   .content-card {
+    width: 100vw;
     height: 200px;
+    padding: 20px;
+  }
+
+  #row-2 .content-card:nth-child(1),
+  #row-2 .content-card:nth-child(2) {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.5);
   }
   
   #congresso {
@@ -968,6 +1005,7 @@ Content Section
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .card-verpons img {
@@ -984,7 +1022,6 @@ Content Section
   text-align: center;
   
 }
-
 
 /*--------------------------------------------------------------
 # Schedule Section
@@ -1217,7 +1254,7 @@ Content Section
   background: var(--tertiary);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   #participe .row {
     flex-direction: column;
   }
@@ -1375,11 +1412,17 @@ Content Section
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 500px){
   #faq .row {
     flex-flow: column;
     width: 100vw;
-    margin-left: -10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  #faq .col {
+    width: 100vw;
   }
 }
 
@@ -1448,7 +1491,7 @@ Curso Pré-congresso
     align-items: center;
   }
   .curso-coluna {
-    width: 400px;
+    width: 100vw;
     height: 250px;
     align-items: center;
   }
@@ -1458,7 +1501,7 @@ Curso Pré-congresso
   .curso-coluna img {
     width:350px;
   }
-  .curso-coluna #curso-paragraph {
+  #curso-congresso #curso-paragraph {
     padding-left: 10px;
     padding-right: 20px;
     margin-bottom: 10px;
@@ -1466,12 +1509,12 @@ Curso Pré-congresso
   }
 }
 
-@media (max-width:400px){
+@media (max-width:500px){
   .curso-container {
     flex-flow: column;
   }
   .curso-coluna {
-    width: 400px;
+    width: 100vw;
     height: 250px;
     align-items: center;
   }
@@ -1481,10 +1524,11 @@ Curso Pré-congresso
   .curso-coluna img {
     width:350px;
   }
-  .curso-coluna #curso-paragraph {
+  #curso-congresso #curso-paragraph {
     padding-left: 10px;
     padding-right: 20px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -1497,6 +1541,7 @@ Curso Pré-congresso
   background-size: cover;
   overflow: hidden;
   position: relative;
+  width: 100vw;
 }
 
 #buy-tickets .section-header h2,
@@ -1599,6 +1644,24 @@ Curso Pré-congresso
 
 #buy-tickets .buy-button a:hover {
   background-color: var(--tertiary);
+}
+
+@media(max-width: 600px) {
+  #buy-tickets .container-fluid {
+    padding: 0;
+  }
+
+  #buy-tickets .row{
+    flex-flow: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #buy-tickets .col {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
