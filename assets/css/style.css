@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  width: 100vw;
 }
 
 @media (max-width: 991px) {
@@ -335,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
+  right: 10px;
   top: 0;
   z-index: 999;
   margin: 15px 15px 0 0;
@@ -673,7 +674,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .my-modal-bg:before {
   content: "";
   background: linear-gradient(45deg, rgba(46,106,150,0.8), rgba(0,35,71,0.8));
-  position: absolute;
+  position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
@@ -682,7 +683,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro .sobre-container {
   width: 100vw;
-  height: inherit;
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -724,6 +725,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 25px;
   color: #fff;
   font-weight: 700;
+}
+
+@media(max-width:370px){
+  .my-modal-bg {
+    overflow:scroll;
+  }
+  #intro .sobre-container{
+    flex-direction: column wrap;
+  }
+  #intro .sobre-coluna {
+    width: 100vw;
+  }
+  #intro .sobre-coluna:nth-child(2) {
+    margin-top: 90px;
+  }
+  #intro .sobre-coluna h3 {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1155,7 +1174,6 @@ Content Section
   background-size: cover;
   overflow: hidden;
   position: relative;
-  height: 200px;
 }
 
 #participe:before {
@@ -1177,7 +1195,7 @@ Content Section
 #participe #participe-text h1, p {
   color: #fff;
   position: relative;
-  top: -10px;
+  margin: 0;
 }
 
 #participe #participe-button a {
@@ -1200,8 +1218,17 @@ Content Section
 }
 
 @media (max-width: 460px) {
-  #participe button {
+  #participe .row {
+    flex-direction: column;
+  }
+  #participe #participe-text, #participe-button{
+    text-align: center;
+  }
+  #participe #participe-button {
     margin-top: 10px;
+  }
+  #participe #participe-button a{
+    float: none;
   }
 }
 
@@ -1348,6 +1375,14 @@ Content Section
   }
 }
 
+@media(max-width: 400px){
+  #faq .row {
+    flex-flow: column;
+    width: 100vw;
+    margin-left: -10px;
+  }
+}
+
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
@@ -1377,7 +1412,6 @@ Curso Pré-congresso
   text-align: left;
   color: var(--tertiary);
   position: relative;
-  text-align: center;
   top: -39px;
 }
 
