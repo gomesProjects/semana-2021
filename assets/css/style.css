@@ -609,6 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   animation-delay: 0.8s;
   border: 2px solid var(--primary);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 #intro .about-btn:hover {
@@ -892,13 +893,15 @@ Content Section
 }
 
 .content-card {
-  width: 33%;
+  width: 33.2%;
   height: 300px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #row-1 .content-card:nth-child(1),
@@ -1443,7 +1446,8 @@ Curso Pré-congresso
   justify-content: space-evenly;
 }
 
-.curso-coluna {
+.curso-coluna,
+.curso-coluna-text {
   width: 600px;
   height: 400px;
   display: flex;
@@ -1451,22 +1455,30 @@ Curso Pré-congresso
   justify-content: flex-end;
 }
 
-#curso-congresso #curso-paragraph {
+#curso-congresso #curso-paragraph-pos,
+#curso-congresso #curso-paragraph-pre {
   text-align: left;
   color: var(--tertiary);
   position: relative;
-  top: -39px;
+}
+
+#curso-congresso #curso-paragraph-pre {
+  padding-bottom: 55px;
+}
+
+#curso-congresso #curso-paragraph-pos {
+  padding-bottom: 9px;
 }
 
 .curso-coluna img {
   width: 600px;
 }
 
-.curso-coluna h3 {
+.curso-coluna-text h3 {
   font-weight: 600;
 }
 
-.curso-coluna li {
+.curso-coluna-text li {
   list-style: none;
   color: var(--tertiary);
   display: flex;
@@ -1474,61 +1486,68 @@ Curso Pré-congresso
   align-items: center;
 }
 
-.curso-coluna ul {
+.curso-coluna-text li:nth-child(4) {
+  padding-bottom: 20px;
+}
+
+.curso-coluna-text ul {
   padding: 0;
 }
 
-.curso-coluna ul li img {
+.curso-coluna-text ul li img {
   width: 15px;
   height: 15px;
   margin-right: 10px;
 }
 
+.curso-coluna-text a {
+  font-size: 20px;
+  color: #fff;
+  background: var(--primary);
+  width: 150px;
+  text-align: center;
+  padding: 5px 0px 4px 0px;
+  border-radius: 25px;
+}
+
+.curso-coluna-text a:hover{
+  background-color: var(--tertiary);
+}
+
 @media (max-width:900px){
-  .curso-container {
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  .curso-coluna-text {
+    text-align: center;
   }
-  .curso-coluna {
-    width: 100vw;
-    height: 250px;
-    align-items: center;
-  }
-  .curso-coluna:nth-child(2){
-    height: 500px;
-  }
-  .curso-coluna img {
-    width:350px;
-  }
-  #curso-congresso #curso-paragraph {
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-bottom: 10px;
+  #curso-congresso #curso-paragraph-pos,
+  #curso-congresso #curso-paragraph-pre {
     text-align: justify;
+  }
+  .curso-coluna-text ul li {
+    justify-content: center;
+    
   }
 }
 
 @media (max-width:500px){
-  .curso-container {
-    flex-flow: column;
+  .curso-coluna img {
+    width: 100%;
   }
   .curso-coluna {
-    width: 100vw;
-    height: 250px;
-    align-items: center;
+    justify-content: flex-start;
   }
-  .curso-coluna:nth-child(2){
-    height: 500px;
+  #curso-pos{
+    margin-top: 15px;
   }
-  .curso-coluna img {
-    width:350px;
+  #curso-pre{
+    margin-top: -15px;
   }
-  #curso-congresso #curso-paragraph {
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+
+  #curso-congresso #curso-paragraph-pos{
+    text-align: justify;
+    padding: 20px;
+  }
+  #curso-congresso #curso-paragraph-pre {
+    padding: 20px 20px ;
   }
 }
 
@@ -1541,7 +1560,6 @@ Curso Pré-congresso
   background-size: cover;
   overflow: hidden;
   position: relative;
-  width: 100vw;
 }
 
 #buy-tickets .section-header h2,
