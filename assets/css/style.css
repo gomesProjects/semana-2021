@@ -450,7 +450,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
+  background: url(../img/intro-bg.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1315,6 +1315,28 @@ Content Section
   margin-bottom: 5px;
 }
 
+.tertulia-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.tertulia-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.tertulia-card li p{
+  margin: 0;
+}
+
+#tertulia-ico {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
@@ -1522,9 +1544,8 @@ Curso Pré-congresso
   #curso-congresso #curso-paragraph-pre {
     text-align: justify;
   }
-  .curso-coluna-text ul li {
+  .curso-coluna-text ul li:nth-child(5) {
     justify-content: center;
-    
   }
 }
 
@@ -1535,19 +1556,22 @@ Curso Pré-congresso
   .curso-coluna {
     justify-content: flex-start;
   }
+  #curso-pre {
+    height: 300px;
+  }
   #curso-pos{
-    margin-top: 15px;
+    height: 430px;
   }
-  #curso-pre{
-    margin-top: -15px;
-  }
-
   #curso-congresso #curso-paragraph-pos{
     text-align: justify;
     padding: 20px;
   }
   #curso-congresso #curso-paragraph-pre {
     padding: 20px 20px ;
+  }
+  .curso-coluna-text ul li {
+    padding-left: 5px;
+    font-size: 15px;
   }
 }
 
