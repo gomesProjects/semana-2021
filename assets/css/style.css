@@ -923,11 +923,12 @@ Content Section
   height: 300px;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 #row-1 .content-card:nth-child(1),
@@ -1511,7 +1512,7 @@ Curso Pré-congresso
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #curso-congresso #curso-paragraph-pos,
@@ -1594,11 +1595,17 @@ Curso Pré-congresso
   .curso-coluna {
     justify-content: flex-start;
   }
-  #curso-pre {
-    height: 300px;
+  #curso-pre-img {
+    height: 240px;
+  }
+  #curso-pos-img {
+    height: 220px;
   }
   #curso-pos{
-    height: 430px;
+    height: 550px;
+  }
+  #curso-pre{
+    height: 450px;
   }
   #curso-congresso #curso-paragraph-pos{
     text-align: justify;
