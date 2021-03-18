@@ -662,7 +662,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
+  background: url(../img/intro-bg.png) top center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -1313,6 +1313,17 @@ Content Section
   color: var(--tertiary);
   margin-left: 15px;
   margin-bottom: 5px;
+}
+
+.tertulia-card a {
+  color: var(--tertiary);
+}
+
+.tertulia-card a:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 25px;
+  padding: 6px 20px 5px 20px;
 }
 
 .tertulia-card ul {
