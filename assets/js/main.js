@@ -9,6 +9,11 @@
 !(function($) {
   "use strict";
   
+  setTimeout(function(){
+    $('.preloader').fadeToggle();
+  }, 3000)
+
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
