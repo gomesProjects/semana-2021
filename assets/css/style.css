@@ -1546,7 +1546,11 @@ Curso Pré-congresso
   align-items: baseline;
 }
 
-.curso-coluna-text li:nth-child(4) {
+#curso-pre li:nth-child(4) {
+  padding-bottom: 20px;
+}
+
+#curso-pos li:nth-child(6) {
   padding-bottom: 20px;
 }
 
@@ -1583,7 +1587,10 @@ Curso Pré-congresso
   #curso-congresso #curso-paragraph-pre {
     text-align: justify;
   }
-  .curso-coluna-text ul li:nth-child(5) {
+  #curso-pos ul li:nth-child(7) {
+    justify-content: center;
+  }
+  #curso-pre ul li:nth-child(5) {
     justify-content: center;
   }
 }
@@ -1688,6 +1695,11 @@ Curso Pré-congresso
 #buy-tickets .card-content .title-1 {
   margin-bottom: 0;
   margin-top: 10px;
+}
+
+#buy-tickets .card-content .title-2 {
+  margin-bottom: 20px;
+  margin-top: 32px;
 }
 
 #buy-tickets .card-content p {
