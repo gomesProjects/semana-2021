@@ -11,7 +11,7 @@
   
   setTimeout(function(){
     $('.preloader').fadeToggle();
-  }, 3000)
+  }, 3500)
 
 
   // Back to top button
