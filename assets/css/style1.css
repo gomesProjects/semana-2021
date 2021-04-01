@@ -685,6 +685,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 400;
 }
 
+#intro #sobre-paragraph-2 {
+  margin-top: 25px;
+}
+
 #intro #sobre-paragraph-3 {
   margin-bottom: 0;
 }

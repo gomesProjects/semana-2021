@@ -10,6 +10,27 @@
     .buy-card {
         margin-top: 10px;
     }
+
+    #desconto .counter {
+        padding-left: 20px;
+    }
+
+    #schedule .nav-link {
+        margin-top: 5px;
+    }
+
+    #curso-congresso #curso-pos-img {
+        height: 340px;
+    }
+
+    #curso-pos li:nth-child(7) {
+        justify-content: center;
+    }
+
+    #curso-pre li:nth-child(5) {
+        justify-content: center;
+    }
+      
 }
 
 @media (min-width: 1024px) {
@@ -23,6 +44,27 @@
 
     #buy-tickets {
         background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1040px) {
+    .my-modal-bg {
+        overflow:scroll;
+    }
+
+    #header {
+        background: rgba(6, 12, 34, 0.98);
+        height: 70px;
+        padding: 15px 0;
+        transition: all 0.5s;
+    }
+    
+    #nav-menu-container {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        display: inline;
     }
 }
 
@@ -63,6 +105,18 @@
     #schedule .sub-heading {
         width: 75%;
     }
+
+    #desconto h2 {
+        text-align: center;
+    }
+
+    #desconto p {
+        text-align: center;
+    }
+
+    #desconto .counter {
+        text-align: center;
+    }
 }
 
 @media (max-width:900px){
@@ -81,6 +135,36 @@
 
     #curso-pre ul li:nth-child(5) {
         justify-content: center;
+    }
+}
+
+@media (max-width: 780px) {
+    #content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #congresso {
+        width: 110px;
+        height: 110px;
+      }
+      
+      #roda-vida,
+      #video-debate,
+      #tempos,
+      #conferencia,
+      #tertulia-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 40px;
+    }
+
+    .content-card p {
+        font-size: 14px;
+    }
+      
+    .content-card h5 {
+        font-size: 18px;
     }
 }
 
@@ -136,13 +220,26 @@
         padding-right: 20%;
         margin-bottom: 20px;
     }
-}
 
-@media(max-width:550px){
-    .my-modal-bg {
-        overflow:scroll;
+    #curso-congresso .curso-coluna img {
+        width: 100%;
     }
 
+    #faq .row {
+        flex-flow: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+
+    #faq .col-sm-6 {
+        max-width: 100%;
+    }
+} 
+
+@media(max-width:550px){
     #intro .sobre-container{
         flex-direction: column wrap;
     }
@@ -253,14 +350,6 @@
         justify-content: flex-start;
     }
 
-    #curso-pre-img {
-        height: 240px;
-    }
-
-    #curso-pos-img {
-        height: 220px;
-    }
-
     #curso-pos{
         height: 550px;
     }
@@ -286,9 +375,14 @@
 }
 
 @media (max-width: 480px) {
+    
     #schedule .nav-tabs a {
         padding: 10px 30px;
         margin-bottom: 10px
+    }
+
+    #intro .row {
+        flex-flow: column;
     }
 }
 
@@ -302,6 +396,6 @@
 
     #intro .row {
         flex-flow: column;
-      }
+    }
   }
   
