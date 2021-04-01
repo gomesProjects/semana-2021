@@ -1,0 +1,307 @@
+@media (max-width: 1199px) {
+    #header .container {
+        max-width: 100%;
+    }
+
+    .nav-menu a {
+        padding: 8px 4px;
+    }
+
+    .buy-card {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #intro {
+        background-attachment: fixed;
+    }
+
+    #participe {
+        background-attachment: fixed;
+    }
+
+    #buy-tickets {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+
+    #header {
+        background: rgba(6, 12, 34, 0.98);
+        height: 70px;
+        padding: 15px 0;
+        transition: all 0.5s;
+    }
+
+    #nav-menu-container {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        display: inline;
+    }
+
+    #intro .intro-container {
+        top: 70px;
+    }
+
+    #intro h1 {
+        font-size: 34px;
+    }
+
+    #intro p {
+        font-size: 16px;
+    }
+
+    #schedule .nav-tabs a {
+        padding: 10px 30px;
+        margin-bottom: 10px
+    }
+
+    #schedule .sub-heading {
+        width: 75%;
+    }
+}
+
+@media (max-width:900px){
+    .curso-coluna-text {
+        text-align: center;
+    }
+
+    #curso-congresso #curso-paragraph-pos,
+    #curso-congresso #curso-paragraph-pre {
+        text-align: justify;
+    }
+
+    #curso-pos ul li:nth-child(7) {
+        justify-content: center;
+    }
+
+    #curso-pre ul li:nth-child(5) {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+
+    #schedule .nav-tabs a {
+        padding: 10px 30px;
+        margin-bottom: 10px
+    }
+
+    #schedule #collapsed-schedule a {
+        font-size: 18px;
+    }
+
+    #schedule #collapsed-schedule i {
+        top: 13px;
+    }
+
+    #faq #faq-list a {
+        font-size: 18px;
+    }
+
+    #faq #faq-list i {
+        top: 13px;
+    }
+
+    #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+        padding: 20px 0;
+    }
+
+    #contact .contact-phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+@media(max-width: 600px) {
+    #buy-tickets .container-fluid {
+        padding: 0;
+    }
+  
+    #buy-tickets .row{
+        flex-flow: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  
+    #buy-tickets .col {
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:550px){
+    .my-modal-bg {
+        overflow:scroll;
+    }
+
+    #intro .sobre-container{
+        flex-direction: column wrap;
+    }
+
+    #intro .sobre-coluna {
+        width: 100vw;
+    }
+
+    #intro .sobre-coluna:nth-child(2) {
+        margin-top: 90px;
+    }
+
+    #intro .sobre-coluna h3 {
+        text-align: center;
+    }
+
+    #desconto .counter {
+        padding-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    #desconto .counter .counter-item {
+        font-size: 16px;
+        min-width: 70px;
+    }
+
+    #desconto .counter .counter-item h4 {
+        font-size: 25px;
+    }
+
+    #content {
+        padding: 60px 0px 60px 0px;
+    }
+    
+    .content-container{
+        flex-flow: column;
+    }
+      
+    .content-card {
+        width: 100vw;
+        height: 200px;
+        padding: 20px;
+    }
+    
+    #row-2 .content-card:nth-child(1),
+    #row-2 .content-card:nth-child(2) {
+        border-bottom: 1px solid rgba(68, 68, 68, 0.5);
+    }
+      
+    #congresso {
+        width: 90px;
+        height: 90px;
+    }
+      
+    #roda-vida,
+    #video-debate,
+    #tempos,
+    #conferencia,
+    #tertulia-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .content-card h5 {
+        font-size: 15px;
+    }
+
+    .content-card p {
+        font-size: 12px;
+    }
+
+    #participe .row {
+        flex-direction: column;
+    }
+
+    #participe #participe-text, #participe-button{
+        text-align: center;
+    }
+
+    #participe #participe-button {
+        margin-top: 10px;
+    }
+
+    #participe #participe-button a{
+        float: none;
+    }
+
+    #faq .row {
+        flex-flow: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    #faq .col {
+        width: 100vw;
+    }
+
+    .curso-coluna img {
+        width: 100%;
+    }
+
+    .curso-coluna {
+        justify-content: flex-start;
+    }
+
+    #curso-pre-img {
+        height: 240px;
+    }
+
+    #curso-pos-img {
+        height: 220px;
+    }
+
+    #curso-pos{
+        height: 550px;
+    }
+
+    #curso-pre{
+        height: 450px;
+    }
+
+    #curso-congresso #curso-paragraph-pos{
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #curso-congresso #curso-paragraph-pre {
+        padding: 20px 20px ;
+    }
+
+    .curso-coluna-text ul li {
+        padding-left: 5px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #schedule .nav-tabs a {
+        padding: 10px 30px;
+        margin-bottom: 10px
+    }
+}
+
+@media (max-width:400px) {
+    #header #logo img {
+        padding: 0;
+        margin: 0;
+        max-height: 35px;
+        padding-right: 10px;
+    }
+
+    #intro .row {
+        flex-flow: column;
+      }
+  }
+  

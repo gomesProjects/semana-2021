@@ -95,12 +95,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 6px;
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
-
 .back-to-top:focus {
   background: var(--tertiary);
   color: #fff;
@@ -167,21 +161,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
 }
 
-@media (max-width: 991px) {
-  #header {
-    background: rgba(6, 12, 34, 0.98);
-    height: 70px;
-    padding: 15px 0;
-    transition: all 0.5s;
-  }
-}
-
-@media (max-width: 1199px) {
-  #header .container {
-    max-width: 100%;
-  }
-}
-
 #header.header-scrolled, #header.header-fixed {
   background: var(--secondary);
   height: 70px;
@@ -213,15 +192,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   max-height: 45px;
   padding-right: 10px;
-}
-
-@media (max-width:400px) {
-  #header #logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 35px;
-    padding-right: 10px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -287,12 +257,6 @@ h1, h2, h3, h4, h5, h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
-}
-
-@media (max-width: 991px) {
-  #nav-menu-container {
-    display: none;
-  }
 }
 
 /* Nav Meu Styling */
@@ -387,12 +351,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav-toggle i {
   color: #fff;
-}
-
-@media (max-width: 991px) {
-  #mobile-nav-toggle {
-    display: inline;
-  }
 }
 
 /* Mobile Nav Styling */
@@ -492,12 +450,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-@media (min-width: 1024px) {
-  #intro {
-    background-attachment: fixed;
-  }
-}
-
 #intro:before {
   content: "";
   background: linear-gradient(45deg, rgba(46,106,150,0.8), rgba(0,35,71,0.8));
@@ -522,12 +474,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 15px;
 }
 
-@media (max-width: 991px) {
-  #intro .intro-container {
-    top: 70px;
-  }
-}
-
 #intro h1 {
   color: #fff;
   font-family: "Lato", sans-serif;
@@ -540,22 +486,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: var(--primary);
 }
 
-@media (max-width: 991px) {
-  #intro h1 {
-    font-size: 34px;
-  }
-}
-
 #intro p {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
-}
-
-@media (max-width: 991px) {
-  #intro p {
-    font-size: 16px;
-  }
 }
 
 #intro .play-btn {
@@ -683,13 +617,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     opacity: 0;
   }
 }
-
-@media(max-width:400px) {
-  #intro .row {
-    flex-flow: column;
-  }
-}
-
 /*-------------Modal Sobre--------------------*/
 
 .my-modal-bg{
@@ -769,24 +696,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 25px;
   color: #fff;
   font-weight: 700;
-}
-
-@media(max-width:500px){
-  .my-modal-bg {
-    overflow:scroll;
-  }
-  #intro .sobre-container{
-    flex-direction: column wrap;
-  }
-  #intro .sobre-coluna {
-    width: 100vw;
-  }
-  #intro .sobre-coluna:nth-child(2) {
-    margin-top: 90px;
-  }
-  #intro .sobre-coluna h3 {
-    text-align: center;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -899,21 +808,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 	margin-right: 10px;
 }
 
-@media(max-width:500px){
-  #desconto .counter {
-    padding-left: 0;
-    padding-top: 0;
-    text-align: center;
-  }
-  #desconto .counter .counter-item {
-    font-size: 16px;
-    min-width: 70px;
-  }
-  #desconto .counter .counter-item h4 {
-    font-size: 25px;
-  }
-}
-
 /*--------------------------------------------------------------
 Content Section
 --------------------------------------------------------------*/
@@ -990,48 +884,6 @@ Content Section
   color: var(--primary);
 }
 
-@media (max-width: 500px) {
-  #content {
-    padding: 60px 0px 60px 0px;
-  }
-
-  .content-container{
-    flex-flow: column;
-  }
-  
-  .content-card {
-    width: 100vw;
-    height: 200px;
-    padding: 20px;
-  }
-
-  #row-2 .content-card:nth-child(1),
-  #row-2 .content-card:nth-child(2) {
-    border-bottom: 1px solid rgba(68, 68, 68, 0.5);
-  }
-  
-  #congresso {
-    width: 90px;
-    height: 90px;
-  }
-  
-  #roda-vida,
-  #video-debate,
-  #tempos,
-  #conferencia,
-  #tertulia-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-  }
-
-  .content-card h5 {
-    font-size: 15px;
-  }
-  .content-card p {
-    font-size: 12px;
-  }
-}
 /*--------------------------------------------------------------
 # Verpons Section
 --------------------------------------------------------------*/
@@ -1096,36 +948,9 @@ Content Section
   padding: 10px 30px;
 }
 
-@media (max-width: 991px) {
-  #schedule .nav-tabs a {
-    padding: 10px 30px;
-    margin-bottom: 10px
-  }
-}
-
-@media (max-width: 767px) {
-  #schedule .nav-tabs a {
-    padding: 10px 30px;
-    margin-bottom: 10px
-  }
-}
-
-@media (max-width: 480px) {
-  #schedule .nav-tabs a {
-    padding: 10px 30px;
-    margin-bottom: 10px
-  }
-}
-
 #schedule .nav-tabs a.active {
   background-color: var(--primary);
   color: #fff;
-}
-
-@media (min-width: 991px) {
-  #schedule .sub-heading {
-    width: 75%;
-  }
 }
 
 #schedule .tab-pane .day-paragraph {
@@ -1158,15 +983,6 @@ Content Section
 #schedule #collapsed-schedule p {
   margin-bottom: 20px;
   padding-top: 10px;
-}
-
-@media (max-width: 768px) {
-  #schedule #collapsed-schedule a {
-    font-size: 18px;
-  }
-  #schedule #collapsed-schedule i {
-    top: 13px;
-  }
 }
 
 #schedule #collapsed-schedule a.collapse {
@@ -1263,12 +1079,6 @@ Content Section
   right: 0;
 }
 
-@media (min-width: 1024px) {
-  #participe {
-    background-attachment: fixed;
-  }
-}
-
 #participe #participe-text h1, p {
   color: #fff;
   position: relative;
@@ -1292,21 +1102,6 @@ Content Section
 
 #participe #participe-button a:hover {
   background: var(--tertiary);
-}
-
-@media (max-width: 500px) {
-  #participe .row {
-    flex-direction: column;
-  }
-  #participe #participe-text, #participe-button{
-    text-align: center;
-  }
-  #participe #participe-button {
-    margin-top: 10px;
-  }
-  #participe #participe-button a{
-    float: none;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1476,29 +1271,6 @@ Content Section
   color: #000;
 }
 
-@media (max-width: 768px) {
-  #faq #faq-list a {
-    font-size: 18px;
-  }
-  #faq #faq-list i {
-    top: 13px;
-  }
-}
-
-@media(max-width: 500px){
-  #faq .row {
-    flex-flow: column;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-  #faq .col {
-    width: 100vw;
-  }
-}
-
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
@@ -1589,58 +1361,10 @@ Curso Pré-congresso
   background-color: var(--tertiary);
 }
 
-@media (max-width:900px){
-  .curso-coluna-text {
-    text-align: center;
-  }
-  #curso-congresso #curso-paragraph-pos,
-  #curso-congresso #curso-paragraph-pre {
-    text-align: justify;
-  }
-  #curso-pos ul li:nth-child(7) {
-    justify-content: center;
-  }
-  #curso-pre ul li:nth-child(5) {
-    justify-content: center;
-  }
-}
-
-@media (max-width:500px){
-  .curso-coluna img {
-    width: 100%;
-  }
-  .curso-coluna {
-    justify-content: flex-start;
-  }
-  #curso-pre-img {
-    height: 240px;
-  }
-  #curso-pos-img {
-    height: 220px;
-  }
-  #curso-pos{
-    height: 550px;
-  }
-  #curso-pre{
-    height: 450px;
-  }
-  #curso-congresso #curso-paragraph-pos{
-    text-align: justify;
-    padding: 20px;
-  }
-  #curso-congresso #curso-paragraph-pre {
-    padding: 20px 20px ;
-  }
-  .curso-coluna-text ul li {
-    padding-left: 5px;
-    font-size: 15px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Buy Tickets Section
 --------------------------------------------------------------*/
-#buy-tickets {
+.buy-container {
   padding: 60px 0;
   background: url(../img/inscricoes.JPG) center center no-repeat;
   background-size: cover;
@@ -1648,12 +1372,7 @@ Curso Pré-congresso
   position: relative;
 }
 
-#buy-tickets .section-header h2,
-#buy-tickets .section-header p{
-  color: #fff;
-}
-
-#buy-tickets:before {
+.buy-container:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
   position: absolute;
@@ -1663,93 +1382,101 @@ Curso Pré-congresso
   right: 0;
 }
 
-@media (min-width: 1024px) {
-  #buy-tickets {
-    background-attachment: fixed;
-  }
+.buy-container .section-header h2,
+.buy-container .section-header p{
+  color: #fff;
 }
 
-#buy-tickets .card {
+.buy-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buy-card {
+  width: 220px;
+  background-color: #fff;
   border: none;
   border-radius: 5px;
   transition: all  0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-
-#buy-tickets .card:hover {
+.buy-card:hover {
   box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
 }
 
-#buy-tickets .card-content,
-#buy-tickets .card-tittle {
-  display: flex;
-  flex-flow: column;
+.buy-card .card-content,
+.buy-card .card-tittle {
   list-style: none;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 
-#buy-tickets .card-tittle li {
+.buy-card .card-tittle li {
   display: flex;
   justify-content: center;
 }
 
-#buy-tickets .card-content .li-content {
-  padding-left: 30px;
-  padding-right: 5px;
-}
-
-#buy-tickets .card-tittle h5 {
+.buy-card .card-tittle h5 {
   font-size: 18px;
   margin: 0;
   padding: 0;
   color: var(--primary);
 }
 
-#buy-tickets .card-tittle li:nth-child(1) h5{
+.buy-card .card-tittle li:nth-child(1) h5{
   padding-top: 10px;
 }
 
-#buy-tickets .card-tittle p {
+.buy-card .card-tittle p {
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
-#buy-tickets .card-tittle .card-price {
+.buy-card .card-tittle .card-price {
   color: var(--tertiary);
   font-size: 25px;
   font-weight: 400;
   padding-top: 10px;
 }
 
-#buy-tickets .card-tittle .card-parcela {
+.buy-card .card-tittle .card-parcela {
   color: var(--tertiary);
   font-size: 15px;
   padding-bottom: 10px;
 }
 
-#buy-tickets .card-tittle #tittle-maior-21 {
+.buy-card .card-tittle #tittle-maior-21 {
   padding-bottom: 20px;
 }
 
-#buy-tickets .card-content #check {
+.buy-card .card-content #check {
   color: var(--primary);
   padding-right: 5px;
 }
 
-#buy-tickets .card .text-muted {
+.buy-card .text-muted {
   opacity: 0.7;
 }
 
-#buy-tickets .buy-button {
+.buy-card .card-content .buy-button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 25px;
 }
 
-#buy-tickets .buy-button a {
+.buy-card .card-content .buy-button a {
   color: #fff;
   font-size: 18px;
   background-color: var(--primary);
@@ -1758,28 +1485,9 @@ Curso Pré-congresso
   transition: all 0.2s ease-in;
 }
 
-#buy-tickets .buy-button a:hover {
+.buy-card .card-content .buy-button a:hover {
   background-color: var(--tertiary);
 }
-
-@media(max-width: 600px) {
-  #buy-tickets .container-fluid {
-    padding: 0;
-  }
-
-  #buy-tickets .row{
-    flex-flow: column;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #buy-tickets .col {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-bottom: 20px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1822,19 +1530,6 @@ Curso Pré-congresso
 
 #contact .contact-address, #contact .contact-phone, #contact .contact-email {
   margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-    padding: 20px 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
 }
 
 #contact .php-email-form .validate {
