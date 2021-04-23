@@ -9,10 +9,9 @@
 !(function($) {
   "use strict";
   
-  setTimeout(function(){
+  $(window).on('load', function() {
     $('.preloader').fadeToggle();
-  }, 3500)
-
+  });
 
   // Back to top button
   $(window).scroll(function() {
@@ -175,8 +174,9 @@
 
   // Gallery carousel (uses the Owl Carousel library)
   $(".gallery-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+    autoplay: false,
+    nav: true,
+    dots:false,
     loop: true,
     center: true,
     responsive: {
@@ -190,7 +190,7 @@
         items: 4
       },
       1200: {
-        items: 5
+        items: 4
       }
     }
   });

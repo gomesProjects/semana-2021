@@ -1184,25 +1184,59 @@ Content Section
   margin-right: 10px;
 }
 
-/*--------------------------------------------------------------
-# Gallery Section
+/*-------------------------------------------------------------
+# Historico Section
 --------------------------------------------------------------*/
-#gallery {
-  padding: 60px;
-  overflow: hidden;
+
+#historico {
+  padding: 60px 0px 60px 0px;
+  background-color: var(--primary);
 }
 
-#gallery .owl-nav, #gallery .owl-dots {
-  margin-top: 25px;
+#historico .section-header {
+  margin-bottom: 20px;
+}
+
+.section-header #historico-title {
+  color: white;
+}
+
+.section-header::before {
+  background: var(--tertiary);
+}
+
+#historico-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#historico-container p {
+  color: white;
+  font-size: 24px;
+  padding: 15px 0px 30px 0px;
+  margin: 0; 
+}
+
+#historico .owl-nav, #historico .owl-dots {
+  margin-top: 5px;
   text-align: center;
+  font-size: 46px;
+  color: white;
 }
 
-#gallery .owl-item {
+#historico .owl-nav .owl-prev {
+  margin-right: 25px;
+}
+
+#historico .owl-item {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
 }
 
-#gallery .owl-dot {
+#historico .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -1211,21 +1245,52 @@ Content Section
   background-color: #ddd;
 }
 
-#gallery .owl-dot.active {
-  background-color: #f82249;
+#historico .owl-dot.active {
+  background-color: var(--primary);
 }
 
-#gallery .gallery-carousel .owl-stage-outer {
+#historico .gallery-carousel .owl-stage-outer {
   overflow: visible;
 }
 
-#gallery .gallery-carousel .center {
-  border: 6px solid #f82249;
+#historico .gallery-carousel .center {
+  border: 2px solid var(--tertiary);
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
-  background: #fff;
+  background: var(--tertiary);
   z-index: 1;
+}
+
+.img-content {
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+}
+
+#img-card {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+
+}
+
+#img-card li {
+  width: 33%;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+
+#img-card img:hover{
+  transform: scale(1.5);
+  transition-duration: 1.5s;
+}
+
+#img-card img{
+  width: 100%;
+  padding: 2px;
 }
 
 /*--------------------------------------------------------------
