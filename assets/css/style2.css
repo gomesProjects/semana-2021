@@ -1280,17 +1280,16 @@ Content Section
   width: 33%;
   overflow: hidden;
   cursor: pointer;
-  
 }
 
 #img-card img:hover{
-  transform: scale(1.5);
-  transition-duration: 1.5s;
+  transform: scale(1.2);
 }
 
 #img-card img{
   width: 100%;
   padding: 2px;
+  transition: all ease-in-out 0.4s;
 }
 
 /*--------------------------------------------------------------
