@@ -1346,7 +1346,7 @@ Content Section
 /*--------------------------------------------------------------
 Curso Pré-congresso
 ----------------------------------------------------------------*/
-#curso-congresso {
+.curso-congresso {
   padding: 60px 0px;
 }
 
@@ -1365,18 +1365,18 @@ Curso Pré-congresso
   justify-content: flex-start;
 }
 
-#curso-congresso #curso-paragraph-pos,
-#curso-congresso #curso-paragraph-pre {
+.curso-congresso #curso-paragraph-pos,
+.curso-congresso #curso-paragraph-pre {
   text-align: left;
   color: var(--tertiary);
   position: relative;
 }
 
-#curso-congresso #curso-paragraph-pre {
+.curso-congresso #curso-paragraph-pre {
   padding-bottom: 55px;
 }
 
-#curso-congresso #curso-paragraph-pos {
+.curso-congresso #curso-paragraph-pos {
   padding-bottom: 9px;
 }
 
@@ -1433,7 +1433,7 @@ Curso Pré-congresso
 # Buy Tickets Section
 --------------------------------------------------------------*/
 .buy-container {
-  padding: 60px 0;
+  padding: 30px 0;
   background: url(../img/inscricoes.JPG) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1455,107 +1455,215 @@ Curso Pré-congresso
   color: #fff;
 }
 
-.buy-content {
+.buy-container .section-header {
+  margin-bottom: 30px;
+}
+
+.buy-container .section-header::before {
+  background-color: var(--primary);
+}
+
+.col-card-container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
-.buy-card {
-  width: 220px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: all  0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
-  position: relative;
+.col-card {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-.buy-card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+.right, .left {
+  width: 20%;
+  height: auto;
 }
 
-.buy-card .card-content,
-.buy-card .card-tittle {
+.center {
+  width: 55%;
+  height: auto;
+}
+
+.card-small, .card-big, .card-center {
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+/*----Card-Small----*/
+
+.card-small {
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.card-small h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 5px;
+  margin-top: 18px;
+}
+
+.card-small .card-price {
+  margin-top: 10px;
+}
+
+.card-small .card-parcela {
+  margin-bottom: 10px;
+}
+
+.card-small .card-content #link-saiba {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card-small .card-content {
+  text-align: center;
+}
+
+/*----Card-Big----*/
+
+.card-big {
+  height: 300px;
+}
+
+.card-big h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.card-big .card-price {
+  margin-top: 20px;
+}
+
+.card-big .card-parcela {
+  margin-bottom: 20px;
+}
+
+.card-big .buy-button {
+  margin-top: 25px;
+}
+
+.card-big #menor-title {
+  margin-bottom: 0px;
+}
+
+.card-big #menor-21 {
+  margin-top: 0px;
+}
+
+.left .card-big .card-title .card-price {
+  margin-top: 0px;
+}
+
+.left .card-big .card-title .card-parcela {
+  margin-bottom: 10px;
+}
+/*----Card-center----*/
+.card-center {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary);
+}
+
+.card-center h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.card-center .card-title #sub-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.card-center .card-content .card-price {
+  color: var(--primary);
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.card-center .card-content .card-parcela {
+  color: var(--primary);
+}
+
+.card-center .card-content .buy-button {
+  margin-top: 50px;
+}
+
+/*----Cards----*/
+
+.card-content, .card-title {
   list-style: none;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 
-.buy-card .card-tittle li {
-  display: flex;
-  justify-content: center;
+.card-title {
+  text-align: center;
 }
 
-.buy-card .card-tittle h5 {
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  color: var(--primary);
-}
-
-.buy-card .card-tittle li:nth-child(1) h5{
-  padding-top: 10px;
-}
-
-.buy-card .card-tittle p {
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-}
-
-.buy-card .card-tittle .card-price {
+.card-title .card-price {
   color: var(--tertiary);
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
-  padding-top: 10px;
 }
 
-.buy-card .card-tittle .card-parcela {
+.card-title .card-parcela {
   color: var(--tertiary);
-  font-size: 15px;
-  padding-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
-.buy-card .card-tittle #tittle-maior-21 {
-  padding-bottom: 20px;
-}
-
-.buy-card .card-content #check {
+.card-content #check {
   color: var(--primary);
   padding-right: 5px;
 }
 
-.buy-card .text-muted {
-  opacity: 0.7;
-}
-
-.buy-card .card-content .buy-button {
+.card-content #link-saiba {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  cursor: pointer;
 }
 
-.buy-card .card-content .buy-button a {
+#link-saiba a{
+  color: gray;
+}
+
+#link-saiba a:hover{
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.buy-button {
+  text-align: center;
+}
+
+.buy-button a {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
+  text-transform: uppercase;
   background-color: var(--primary);
   padding: 14px 20px 10px 20px;
-  border-radius: 25PX;
+  border-radius: 25px;
   transition: all 0.2s ease-in;
 }
 
-.buy-card .card-content .buy-button a:hover {
-  background-color: var(--tertiary);
-}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

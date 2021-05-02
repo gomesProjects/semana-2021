@@ -19,7 +19,7 @@
         margin-top: 5px;
     }
 
-    #curso-congresso #curso-pos-img {
+    .curso-congresso #curso-pos-img {
         height: 340px;
     }
 
@@ -124,8 +124,8 @@
         text-align: center;
     }
 
-    #curso-congresso #curso-paragraph-pos,
-    #curso-congresso #curso-paragraph-pre {
+    .curso-congresso #curso-paragraph-pos,
+    .curso-congresso #curso-paragraph-pre {
         text-align: justify;
     }
 
@@ -221,7 +221,7 @@
         margin-bottom: 20px;
     }
 
-    #curso-congresso .curso-coluna img {
+    .curso-congresso .curso-coluna img {
         width: 100%;
     }
 
@@ -358,12 +358,12 @@
         height: 450px;
     }
 
-    #curso-congresso #curso-paragraph-pos{
+    .curso-congresso #curso-paragraph-pos{
         text-align: justify;
         padding: 20px;
     }
 
-    #curso-congresso #curso-paragraph-pre {
+    .curso-congresso #curso-paragraph-pre {
         padding: 20px 20px ;
     }
 
