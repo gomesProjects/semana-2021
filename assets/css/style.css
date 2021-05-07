@@ -1616,6 +1616,9 @@ Curso Pré-congresso
 .sub-title-2 {
   margin-bottom: 15px;
 }
+.sub-title-2, .sub-title {
+  font-size: 18px;
+}
 
 .semana-card .card-price {
   text-align: center;
