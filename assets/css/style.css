@@ -1433,7 +1433,7 @@ Curso Pré-congresso
 # Buy Tickets Section
 --------------------------------------------------------------*/
 .buy-container {
-  padding: 30px 0;
+  padding: 60px 0;
   background: url(../img/inscricoes.JPG) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1455,28 +1455,15 @@ Curso Pré-congresso
   color: #fff;
 }
 
-<<<<<<< HEAD
 .buy-container .section-header{
   margin-bottom: 0px;
 }
 
 .buy-content {
-=======
-.buy-container .section-header {
-  margin-bottom: 30px;
-}
-
-.buy-container .section-header::before {
-  background-color: var(--primary);
-}
-
-.col-card-container {
->>>>>>> 4269327dd8353aa02f978e2d0cf84e039e35e1a8
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-<<<<<<< HEAD
   align-items: flex-start;
 }
 
@@ -1488,176 +1475,69 @@ Curso Pré-congresso
   transition: all  0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
   position: relative;
-=======
-  align-items: center;
-  position: relative;
-}
-
-.col-card {
->>>>>>> 4269327dd8353aa02f978e2d0cf84e039e35e1a8
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.right, .left {
-  width: 20%;
-  height: auto;
+.buy-card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
 }
 
-.center {
-  width: 55%;
-  height: auto;
-}
-
-.card-small, .card-big, .card-center {
-  width: 100%;
-  background-color: white;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-}
-
-/*----Card-Small----*/
-
-.card-small {
-  height: 250px;
-  margin-bottom: 10px;
-}
-
-.card-small h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 5px;
-  margin-top: 18px;
-}
-
-.card-small .card-price {
-  margin-top: 10px;
-}
-
-.card-small .card-parcela {
-  margin-bottom: 10px;
-}
-
-.card-small .card-content #link-saiba {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.card-small .card-content {
-  text-align: center;
-}
-
-/*----Card-Big----*/
-
-.card-big {
-  height: 300px;
-}
-
-.card-big h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 10px;
-  margin-top: 18px;
-}
-
-.card-big .card-price {
-  margin-top: 20px;
-}
-
-.card-big .card-parcela {
-  margin-bottom: 20px;
-}
-
-.card-big .buy-button {
-  margin-top: 25px;
-}
-
-.card-big #menor-title {
-  margin-bottom: 0px;
-}
-
-.card-big #menor-21 {
-  margin-top: 0px;
-}
-
-.left .card-big .card-title .card-price {
-  margin-top: 0px;
-}
-
-.left .card-big .card-title .card-parcela {
-  margin-bottom: 10px;
-}
-/*----Card-center----*/
-.card-center {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--tertiary);
-}
-
-.card-center h2 {
-  font-size: 35px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 25px;
-}
-
-.card-center .card-title #sub-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 20px;
-}
-
-.card-center .card-content .card-price {
-  color: var(--primary);
-  font-size: 30px;
-  margin-top: 50px;
-}
-
-.card-center .card-content .card-parcela {
-  color: var(--primary);
-}
-
-.card-center .card-content .buy-button {
-  margin-top: 50px;
-}
-
-/*----Cards----*/
-
-.card-content, .card-title {
+.buy-card .card-content,
+.buy-card .card-tittle {
   list-style: none;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
 
-.card-title {
-  text-align: center;
+.buy-card .card-tittle li {
+  display: flex;
+  justify-content: center;
 }
 
-.card-title .card-price {
+.buy-card .card-tittle h5 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+}
+
+.buy-card .card-tittle li:nth-child(1) h5{
+  padding-top: 10px;
+}
+
+.buy-card .card-tittle p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-card .card-tittle .card-price {
   color: var(--tertiary);
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 400;
+  padding-top: 10px;
 }
 
-.card-title .card-parcela {
+.buy-card .card-tittle .card-parcela {
   color: var(--tertiary);
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
-.card-content #check {
+.buy-card .card-tittle #tittle-maior-21 {
+  padding-bottom: 20px;
+}
+
+.buy-card .card-content #check {
   color: var(--primary);
   padding-right: 5px;
 }
 
-<<<<<<< HEAD
 .curso {
   text-align: center;
 }
@@ -1671,33 +1551,19 @@ Curso Pré-congresso
 }
 
 .link-saiba a:hover {
-=======
-.card-content #link-saiba {
-  text-align: center;
-  cursor: pointer;
-}
-
-#link-saiba a{
-  color: gray;
-}
-
-#link-saiba a:hover{
->>>>>>> 4269327dd8353aa02f978e2d0cf84e039e35e1a8
   color: var(--primary);
   text-decoration: underline;
 }
 
 .buy-button {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .buy-button a {
   color: #fff;
-<<<<<<< HEAD
   font-size: 18px;
-=======
-  font-size: 15px;
->>>>>>> 4269327dd8353aa02f978e2d0cf84e039e35e1a8
   text-transform: uppercase;
   background-color: var(--primary);
   padding: 14px 20px 10px 20px;
@@ -1705,7 +1571,6 @@ Curso Pré-congresso
   transition: all 0.2s ease-in;
 }
 
-<<<<<<< HEAD
 .buy-button a:hover {
   background-color: var(--tertiary);
 }
@@ -1777,8 +1642,6 @@ Curso Pré-congresso
   color: var(--primary)
 }
 
-=======
->>>>>>> 4269327dd8353aa02f978e2d0cf84e039e35e1a8
 
 /*--------------------------------------------------------------
 # Contact Section
