@@ -9,6 +9,40 @@
 !(function($) {
   "use strict";
   
+  //Pixel Custom Tracks
+  $('#inscrever_1').click(function(){
+    fbq('trackCustom', '#1-Inscrever-se')
+  });
+  $('#inscrever_2').click(function(){
+    fbq('trackCustom', '#2-Inscrever-se')
+  });
+  $('#quero_participar').click(function(){
+    fbq('trackCustom', '#quero_participar')
+  });
+  $('#inscrever_3').click(function(){
+    fbq('trackCustom', '#3-Inscrever-se')
+  });
+  $('#inscrever_4').click(function(){
+    fbq('trackCustom', '#4-Semana')
+  });
+  $('#inscrever_5').click(function(){
+    fbq('trackCustom', '#5-Curso_Pré')
+  });
+  $('#inscrever_6').click(function(){
+    fbq('trackCustom', '#6-Congresso')
+  });
+  $('#inscrever_7').click(function(){
+    fbq('trackCustom', '#7-Congresso21')
+  });
+  $('#inscrever_8').click(function(){
+    fbq('trackCustom', '#8-Curso_Pós')
+  });
+  $('#contato').click(function(){
+    fbq('trackCustom', '#9-Contato')
+  });
+
+
+
   $(window).on('load', function() {
     $('.preloader').fadeToggle();
   });

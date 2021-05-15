@@ -29,6 +29,20 @@
   <link href="assets/css/responsive1.css" rel="stylesheet">
   <link rel="stylesheet" href="https://blob.contato.io/machine-files/all-css/form-ll.css">
 
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4429429417087090');
+    fbq('track', 'PageView');
+  </script>
+
 </head>
 
 <body>
@@ -72,7 +86,7 @@
       <p class="mb-4 pb-0">09 a 18 de Julho, Evento 100% Online</p>
       <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
       <div class="row">
-        <a href="#buy-tickets" class="inscrever-btn scrollto">Inscrever-se</a>
+        <a id="inscrever_1" href="#buy-tickets" class="inscrever-btn scrollto">Inscrever-se</a>
         <a class="about-btn">Sobre o Evento</a>
       </div>      
     </div>
@@ -1378,7 +1392,7 @@
             <li><i class="fa fa-check-circle" id="check"></i>Consecução da Maxiproéxis</li>
             <li><i class="fa fa-check-circle" id="check"></i>Efeitos do Compléxis</li>
             <li><i class="fa fa-check-circle" id="check"></i>Colheita Intermissiva e pré-intermissiologia</li>
-            <li><a href="#buy-tickets" class="scrollto">Inscrever-se</a> </li>
+            <li><a id="inscrever_2" href="#buy-tickets" class="scrollto">Inscrever-se</a> </li>
           </ul> 
         </div>
         
@@ -1395,7 +1409,7 @@
             <p>Não perca o maior evento sobre inversão existencial! E agora, totalmente online.</p>
           </div>
           <div id="participe-button" class="col-lg-6">
-            <a href="#buy-tickets" class="scrollto">Quero Participar</a>
+            <a id="quero_participar" href="#buy-tickets" class="scrollto">Quero Participar</a>
           </div>
         </div>
       </div>
@@ -1713,7 +1727,7 @@
                 <li><i class="fa fa-check-circle" id="check"></i>Curso Intermissivo e Proéxis</li>
                 <li><i class="fa fa-check-circle" id="check"></i>Por que aplicar uma técnica evolutiva?</li>
                 <li><i class="fa fa-check-circle" id="check"></i>Fundamentos e metas de aplicação da invéxis</li>
-                <li><a href="#buy-tickets" class="scrollto">Inscrever-se</a> </li>
+                <li><a id="inscrever_3" href="#buy-tickets" class="scrollto">Inscrever-se</a> </li>
               </ul> 
             </div>
             
@@ -1742,7 +1756,7 @@
               <li><p class="parcela">em até 12x</p></li>
             </ul>
             <ul class="btn-container">
-              <li class="buy-button"><a href="https://assinvexis.org/produto/xv-semana-da-invexis/">inscrever-se</a></li>
+              <li class="buy-button"><a id="inscrever_4" href="https://assinvexis.org/produto/xv-semana-da-invexis/">inscrever-se</a></li>
             </ul>
           </ul>
         </div>
@@ -1760,7 +1774,7 @@
               <li><i class="fa fa-check-circle" id="check"></i>O que é Inversão</li>
               <li>Existencial</li>
               <li class="link-saiba"><a href="#pre" class="scrollto">+ Saiba Mais</a></li>
-              <li class="buy-button"><a href="https://assinvexis.org/produto/curso-pre-congresso-o-que-e-a-inversao-existencial/">INSCREVER-SE</a></li>
+              <li class="buy-button"><a id="inscrever_5" href="https://assinvexis.org/produto/curso-pre-congresso-o-que-e-a-inversao-existencial/">INSCREVER-SE</a></li>
             </ul>
           </div>
 
@@ -1777,7 +1791,7 @@
               <li class="li-content"><i class="fa fa-check-circle" id="check"></i>2 Mesa Redonda</li>
               <li class="li-content"><i class="fa fa-check-circle" id="check"></i>1 Vídeo-debate</li>
               
-              <li class="buy-button"><a href="https://assinvexis.org/produto/congresso-internacional-de-inversao-existencial-cinvexis/">INSCREVER-SE</a></li>
+              <li class="buy-button"><a id="inscrever_6" href="https://assinvexis.org/produto/congresso-internacional-de-inversao-existencial-cinvexis/">INSCREVER-SE</a></li>
             </ul>
           </div> 
           
@@ -1795,7 +1809,7 @@
               <li class="li-content"><i class="fa fa-check-circle" id="check"></i>2 Mesa Redonda</li>
               <li class="li-content"><i class="fa fa-check-circle" id="check"></i>1 Vídeo-debate</li>
             
-              <li class="buy-button"><a href="https://assinvexis.org/produto/congresso-internacional-de-inversao-existencial-cinvexis-menor-21/">INSCREVER-SE</a></li>
+              <li class="buy-button"><a id="inscrever_7" href="https://assinvexis.org/produto/congresso-internacional-de-inversao-existencial-cinvexis-menor-21/">INSCREVER-SE</a></li>
             </ul>
           </div>
 
@@ -1810,7 +1824,7 @@
              <li class="li-content"><i class="fa fa-check-circle" id="check"></i>Tempo dos Cursos</li>
              <li>Intermissivos</li>
               <li class="link-saiba"><a href="#pos" class="scrollto">+ Saiba Mais</a></li>
-              <li class="buy-button"><a href="https://assinvexis.org/produto/curso-pos-congresso-tempo-dos-cursos-intermissivos/">INSCREVER-SE</a></li>
+              <li class="buy-button"><a id="inscrever_8" href="https://assinvexis.org/produto/curso-pos-congresso-tempo-dos-cursos-intermissivos/">INSCREVER-SE</a></li>
             </ul>
           </div>
 
@@ -1862,7 +1876,7 @@
               <div class="error-message">Erro de Envio</div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Enviar</button></div>
+            <div class="text-center"><button id="contato" type="submit">Enviar</button></div>
             <input type="hidden" id="source" name="source" value="" />
             <img src="https://llimages.com/redirect/redirect.aspx?A=V&p=18601931&m=502218" style="display: none;" />
           </form>
