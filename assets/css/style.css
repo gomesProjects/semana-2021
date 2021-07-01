@@ -1575,6 +1575,24 @@ Curso Pré-congresso
   background-color: var(--tertiary);
 }
 
+.cupom {
+  text-align: center;
+  color: #2f3138;
+}
+
+.cupom h4 {
+  margin: 0;
+  color: #2f3138;
+}
+
+#cupom-1 {
+  margin-top: 18px;
+}
+
+#cupom-2 {
+  margin-bottom: 20px;
+}
+
 /*----Semana-Contaier----*/
 
 .semana-card {
